@@ -18,7 +18,7 @@ const getPageTitle = (pathname: string) => {
     case "/settings":
       return "Settings";
     default:
-      return "Cogniflow";
+      return "Astral Path";
   }
 };
 

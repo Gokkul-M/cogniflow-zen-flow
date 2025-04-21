@@ -11,7 +11,6 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -51,10 +50,12 @@ export const AppSidebar = () => {
     <Sidebar className="border-r border-border">
       <SidebarHeader className="py-6 px-3">
         <div className="flex items-center gap-2 px-2">
-          <div className="bg-gradient-to-r from-primary to-accent w-8 h-8 rounded-lg flex items-center justify-center">
-            <BrainCircuit size={20} className="text-white" />
+          <div className="bg-gradient-to-r from-indigo-400 to-purple-400 w-8 h-8 rounded-lg flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+              <path d="M12 2a8 8 0 0 0-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>
           </div>
-          <span className="font-semibold text-xl">Cogniflow</span>
+          <span className="font-semibold text-xl">Astral Path</span>
         </div>
       </SidebarHeader>
       <SidebarContent>
@@ -76,8 +77,8 @@ export const AppSidebar = () => {
       <SidebarFooter className="p-4">
         <div className="pt-4 border-t border-border">
           <div className="flex items-center gap-3 px-3">
-            <div className="w-8 h-8 rounded-full bg-cogni-purple flex items-center justify-center">
-              <span className="font-medium text-primary">J</span>
+            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-indigo-400 to-purple-400 flex items-center justify-center">
+              <span className="font-medium text-white">J</span>
             </div>
             <div className="flex-1">
               <p className="text-sm font-medium">Jane Cooper</p>
